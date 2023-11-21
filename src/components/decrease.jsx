@@ -1,15 +1,23 @@
 import React from 'react';
 
 class Decrease extends React.Component {
-    render() {
+  render() {
     const { count, setCount } = this.props;
-      return (
+
+    function checkCount() {
+      if (count > 0) {
+        setCount(count - 1);
+      }
+    }
+
+    return (
       <>
         <div className="card">
-        <button onClick={() => setCount(count - 1)}>-</button>
+          <button onClick={checkCount}>-</button>
         </div>
       </>
     );
-    }
   }
-  export default Decrease;
+}
+
+export default Decrease;
