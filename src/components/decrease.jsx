@@ -8,7 +8,7 @@ class Decrease extends React.Component {
       if (count > 0) {
         setCount(count - 1);
       }else{
-        alert("Count Can't Be Zero");
+        alert("Count Can't Be Negative :)");
       }
     }
 
