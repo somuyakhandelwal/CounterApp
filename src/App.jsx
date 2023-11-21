@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+    <h1>Counter App</h1>
     <Display myData={count}/>
     <div className='Button'>
     <Increase count={count} setCount={setCount} />
